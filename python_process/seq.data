@@ -1,0 +1,4 @@
+0	findType ( getParameter getChildNodes asString toString Paramprocess ( getTypeAsString toString getParameters getName add ) findType get equals find ( getChildNodes getVarClass ( getTypeAsString toString getName getVariables add ) equals find size split ) getType split Fieldprocess ( getMembers getTypeAsString toString getName getVariables add ) getExtendedTypes getParentNode getName  )
+1	find ( getChildNodes getVarClass ( getTypeAsString toString getName getVariables add ) equals find size split  )
+2	getVarClass ( getTypeAsString toString getName getVariables add  )
+3	getClassName ( getClassName getNameAsString  )

@@ -1,0 +1,4 @@
+0	findType:getParameter,getChildNodes,asString,toString,Paramprocess,findType,get,equals,find,getType,split,Fieldprocess,getExtendedTypes,getParentNode,getName,  Paramprocess:getTypeAsString,toString,getParameters,getName,add,   find:getChildNodes,getVarClass,equals,find,size,split,  getVarClass:getTypeAsString,toString,getName,getVariables,add,    Fieldprocess:getMembers,getTypeAsString,toString,getName,getVariables,add,  
+1	find:getChildNodes,getVarClass,equals,find,size,split,  getVarClass:getTypeAsString,toString,getName,getVariables,add,  
+2	getVarClass:getTypeAsString,toString,getName,getVariables,add, 
+3	getClassName:getClassName,getNameAsString, 

@@ -122,29 +122,28 @@ def test(path):
             break
 
 
-def jsonWrite(code, comment, api, seq):
+def jsonWrite(code, comment, seq):
     codefile = open(code)
     commentfile = open(comment)
-    apifile = open(api)
+# apifile = open(api)
     seqfile = open(seq)
     file = open("./data.json", "w")
-    for cd, cmt, api, seq in zip(codefile.readlines(), commentfile.readlines(), apifile.readlines(), seqfile.readlines()):
+    for cd, cmt, seq in zip(codefile.readlines(), commentfile.readlines(),  seqfile.readlines()):
         num = cd.split("\t")[0]
         seq = seq.split("\t")[1].strip()
-        api = api.split("\t")[1].strip()
-        if(seq =="" or api == ""):
+
+        if(seq ==""):
             continue
         cd = cleanCodebyline(cd)
         cmt = cleanCommentbyline(cmt)
         if cmt == "":
             continue
-        new_dict = {"id":num, "code":cd, "comment":cmt, "api":api, "seq":seq}
+        new_dict = {"id":num, "code":cd, "comment":cmt, "seq":seq}
         json_str = json.dumps(new_dict)
         file.write(json_str+"\n")
     file.close()
     codefile.close()
     commentfile.close()
-    apifile.close()
     seqfile.close()
 
 
@@ -477,10 +476,10 @@ def lookjs(num, path = "tuple.json"):
 if __name__ == "__main__":
     code = "code.data"
     comment  = "comment.data"
-    api = "api.data"
+    #api = "api.data"
     seq = "seq.data"
     # test("test.output")
-    jsonWrite(code,comment,api,seq)
+    jsonWrite(code,comment,seq)
     js = "data.json"
     # fliter(js,3)
     # randomTest(js)
@@ -501,6 +500,6 @@ if __name__ == "__main__":
     # nlVocab(cleanfile)
     # multi_encoders(infile,outfile)
     # fiveEncoder(infile,outfile)
-    lookjs("358280")
+#    lookjs("358280")
 
 

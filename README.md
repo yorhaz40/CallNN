@@ -19,7 +19,8 @@ The "tuple.json" file is not used in our experiment. It save the source code and
 The data should be cleaned before training. We use python to do data clean process.
 To get the training data, do follows:
 1. put code.data seq.data and comment.data in the same folder of python source code.
-2. run dataprocess.py
+2. run callnn.py to get formated seq data, its name is formatseq.data
+3. remove the original "seq.data" and rename the "formatseq.data" to "seq.data", then run dataprocess.py
 
 Our data can be found in the folder "call".
 
